@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+    margin: auto;
+    position: relative;
+}
+
+/*##############################*/
+/*##########   HEADER   ########*/
+/*##############################*/
+
+header {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+header nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+header img {
+    height: 20px;
+    width: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: rgba(0, 0, 0, 0.808);
+    text-decoration: underline;
+}
+
+
+/*##############################*/
+/*##########   BODY  ###########*/
+/*##############################*/
+
+/* listProductsView */
+
+#banner {
+    background-image: url('images/header3.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    text-shadow: rgb(163, 163, 163);
+    color: black;
+    width: auto;
+    height: 500px;
+    padding-top: 10%;
+    text-align: center;
+}
+
+#products {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -150px;
+}
+#products a {
+    text-decoration: none;
+    color: black;
+}
+
+.products h3 {
+    font-family: 'Raleway', sans-serif;
+}
+.products p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.products img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    object-fit: scale-down;
+}
+
+/* productView */
+
+.product {
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 400px;
+    height: 400px;
+    object-fit: scale-down;
+}
+
+.product_border {
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
+    position: sticky;
+    top: 5%;
+    width: 95%;
+    margin: auto;
+    z-index: 90;
+}
+.price_and_options {
+    margin-top: 5%;
+    width: 40%;
+}
+
+.price_and_options h2, p {
+    font-weight: 300;
+}
+.price_and_options h2 {
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+.product_name {
+    font-weight: 500;
+    font-size: 30px;
+}
+.price_and_options select {
+    font-family: 'Raleway', sans-serif;
+    height: 25px;
+    width: 245px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.price_and_options input {
+    font-family: 'Raleway', sans-serif;
+    height: 25px;
+    width: 245px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+}
+
+/* shoppingCartView */
+
+#empty_cart {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 15%;
+    min-height: 330px;
+    background-image: url('images/empty.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cart {
+    min-height: 445px;
+}
+.cart {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 60%;
+    margin: auto;
+    margin-top: 8%;
+}
+.cart a {
+    text-decoration: none;
+    color: black;
+}
+.cart th {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    height: 50px;
+    vertical-align: text-top;
+}
+.cart th, td {
+    width: 25%;
+    text-align: center;
+}
+#table_product {
+    text-align: left;
+}
+.product_td {
+    text-align: left;
+}
+#name_td {
+    font-family: 'Raleway', sans-serif;
+    margin-left: -15%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.remove_link {
+    font-size: 12px;
+}
+.cart input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+    height: 28px;
+    width: 33px;
+}
+#subtotal {
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+    margin: auto;
+    text-align: right;
+}
+#subtotal input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 90px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 8%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+}
+.cart img {
+    width: 100px;
+}
+
+/* errorView */
+
+.error {
+    min-height: 490px;
+    background-image: url('images/shrugg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.error p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* orderPlacedView */
+
+.order_placed {
+    font-family: 'Raleway', sans-serif;
+    min-height: 450px;
+    margin-top: 7%;
+    text-align: center;
+}
+
+/*##############################*/
+/*##########  FOOTER  ##########*/
+/*##############################*/
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+
+
